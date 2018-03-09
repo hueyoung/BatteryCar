@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242424">
+
+    <ToggleButton
+        android:id="@+id/tb_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_electric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        tools:text="电量: 90%"
+        android:textSize="40sp"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/tv_voltage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_electric"
+        android:layout_alignLeft="@id/tv_electric"
+        android:layout_marginTop="5dp"
+        tools:text="电压: 90%"
+        android:textSize="40sp"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/tv_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_voltage"
+        android:layout_alignLeft="@id/tv_voltage"
+        android:layout_marginTop="5dp"
+        tools:text="温度: 90%"
+        android:textSize="40sp"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/tv_health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_temperature"
+        android:layout_alignLeft="@id/tv_temperature"
+        android:layout_marginTop="5dp"
+        tools:text="健康: 90%"
+        android:textSize="40sp"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_health"
+        android:layout_marginTop="20dp"
+        android:text="refresh"
+        android:textColor="#ffffff"
+        android:background="@drawable/fillet_btn"
+        android:onClick="clickRefreshBtn" />
+</RelativeLayout>
